@@ -1,3 +1,30 @@
-<p>
-  navbar works!
-</p>
+<div class="colorNav">
+  <div class="flex justify-content-between flex-wrap">
+    <div>
+      <span class="cursor-pointer">
+        <i
+          class="pi pi-bars text-white"
+          (click)="sibebar = true"
+          style="font-size: 1.2rem"
+        ></i>
+      </span>
+      <span class="cursor-pointer ml-2">
+        <i
+          class="pi pi-home text-white"
+          style="font-size: 1.2rem"
+          routerLink="/dashboard"
+        ></i>
+      </span>
+    </div>
+   <div>
+
+   </div>
+    <i class="pi pi-arrow-right text-white cursor-pointer" style="font-size: 1.2rem"></i>
+    <!-- <button pButton class="p-button-text btnSenha" icon="pi pi-chevron-right" label="Sair"
+    (click)="confirmarLogout(sair)"></button> -->
+</div>
+</div>
+
+<p-sidebar [(visible)]="sibebar" >
+
+</p-sidebar>
